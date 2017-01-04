@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		0E153A341E09B26D0022245B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E153A331E09B26D0022245B /* AppDelegate.swift */; };
-		0E153A361E09B26D0022245B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E153A351E09B26D0022245B /* ViewController.swift */; };
 		0E153A391E09B26D0022245B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E153A371E09B26D0022245B /* Main.storyboard */; };
 		0E153A3B1E09B26D0022245B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E153A3A1E09B26D0022245B /* Assets.xcassets */; };
 		0E153A3E1E09B26D0022245B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E153A3C1E09B26D0022245B /* LaunchScreen.storyboard */; };
@@ -26,6 +25,9 @@
 		0E153A751E09B3D40022245B /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E153A741E09B3D40022245B /* StoreKit.framework */; };
 		0E153A771E09B3DD0022245B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E153A761E09B3DD0022245B /* QuartzCore.framework */; };
 		0E153A791E09B3E90022245B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E153A781E09B3E90022245B /* CoreLocation.framework */; };
+		0E300B611E0C621800BD1DFA /* signUpVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E300B601E0C621800BD1DFA /* signUpVc.swift */; };
+		0E300B631E0C624C00BD1DFA /* signInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E300B621E0C624C00BD1DFA /* signInVC.swift */; };
+		0E300B651E0C628900BD1DFA /* resetPasswordVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E300B641E0C628900BD1DFA /* resetPasswordVc.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +50,6 @@
 /* Begin PBXFileReference section */
 		0E153A301E09B26D0022245B /* softsInstagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = softsInstagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E153A331E09B26D0022245B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0E153A351E09B26D0022245B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0E153A381E09B26D0022245B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0E153A3A1E09B26D0022245B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0E153A3D1E09B26D0022245B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -71,6 +72,9 @@
 		0E153A741E09B3D40022245B /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		0E153A761E09B3DD0022245B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		0E153A781E09B3E90022245B /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		0E300B601E0C621800BD1DFA /* signUpVc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = signUpVc.swift; sourceTree = "<group>"; };
+		0E300B621E0C624C00BD1DFA /* signInVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = signInVC.swift; sourceTree = "<group>"; };
+		0E300B641E0C628900BD1DFA /* resetPasswordVc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = resetPasswordVc.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,8 +138,8 @@
 		0E153A321E09B26D0022245B /* softsInstagram */ = {
 			isa = PBXGroup;
 			children = (
+				0E300B5D1E0C61C500BD1DFA /* Controller */,
 				0E153A331E09B26D0022245B /* AppDelegate.swift */,
-				0E153A351E09B26D0022245B /* ViewController.swift */,
 				0E153A371E09B26D0022245B /* Main.storyboard */,
 				0E153A3A1E09B26D0022245B /* Assets.xcassets */,
 				0E153A3C1E09B26D0022245B /* LaunchScreen.storyboard */,
@@ -179,6 +183,16 @@
 				0E153A621E09B2A30022245B /* CFNetwork.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0E300B5D1E0C61C500BD1DFA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0E300B601E0C621800BD1DFA /* signUpVc.swift */,
+				0E300B621E0C624C00BD1DFA /* signInVC.swift */,
+				0E300B641E0C628900BD1DFA /* resetPasswordVc.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -318,8 +332,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E153A361E09B26D0022245B /* ViewController.swift in Sources */,
+				0E300B611E0C621800BD1DFA /* signUpVc.swift in Sources */,
+				0E300B631E0C624C00BD1DFA /* signInVC.swift in Sources */,
 				0E153A341E09B26D0022245B /* AppDelegate.swift in Sources */,
+				0E300B651E0C628900BD1DFA /* resetPasswordVc.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -469,15 +485,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 3X72U4HH78;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = softsInstagram/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com-softs4mobiles.com.softsInstagram";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -486,12 +506,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 3X72U4HH78;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = softsInstagram/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com-softs4mobiles.com.softsInstagram";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -576,6 +598,7 @@
 				0E153A5A1E09B26D0022245B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0E153A5B1E09B26D0022245B /* Build configuration list for PBXNativeTarget "softsInstagramTests" */ = {
 			isa = XCConfigurationList;
@@ -584,6 +607,7 @@
 				0E153A5D1E09B26D0022245B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0E153A5E1E09B26D0022245B /* Build configuration list for PBXNativeTarget "softsInstagramUITests" */ = {
 			isa = XCConfigurationList;
@@ -592,6 +616,7 @@
 				0E153A601E09B26D0022245B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
